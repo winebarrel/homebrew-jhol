@@ -5,21 +5,21 @@
 class Jhol < Formula
   desc "CLI to display and check Japanese holidays."
   homepage "https://github.com/winebarrel/jhol"
-  version "1.0.1"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/winebarrel/jhol/releases/download/v1.0.1/jhol_1.0.1_darwin_amd64.tar.gz"
-      sha256 "a101ce060a0a9debb8e006d398df28534bdb0080e2fcdbb82577c28352fb825a"
+      url "https://github.com/winebarrel/jhol/releases/download/v1.1.0/jhol_1.1.0_darwin_amd64.tar.gz"
+      sha256 "be44bc0d5359d886288b14f2aad663d23287ac7ee5d7b7a5e6f7f14575a5adef"
 
       def install
         bin.install 'jhol'
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/winebarrel/jhol/releases/download/v1.0.1/jhol_1.0.1_darwin_arm64.tar.gz"
-      sha256 "34d9fa7a6b687ad50c8a4b87a3dfb2979555ca92d747da4e38748d2c7d5ceab3"
+      url "https://github.com/winebarrel/jhol/releases/download/v1.1.0/jhol_1.1.0_darwin_arm64.tar.gz"
+      sha256 "42ccd14bf5275356229e3d8279a1bc53db2f146b381de196db7a9baed6a6ff10"
 
       def install
         bin.install 'jhol'
@@ -29,16 +29,16 @@ class Jhol < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/winebarrel/jhol/releases/download/v1.0.1/jhol_1.0.1_linux_arm64.tar.gz"
-      sha256 "5cbf6ef9f4b40c6bf33b926e327418724f10996c1a567818fe17b67ce745dba5"
+      url "https://github.com/winebarrel/jhol/releases/download/v1.1.0/jhol_1.1.0_linux_arm64.tar.gz"
+      sha256 "5a78a17e57ffb2664e3b37bdaca13ec7d181a755b76af85989cf94cbd208dcfe"
 
       def install
         bin.install 'jhol'
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/winebarrel/jhol/releases/download/v1.0.1/jhol_1.0.1_linux_amd64.tar.gz"
-      sha256 "317cf670c3046ad37e6c5af281cbd07b0154b21eaa5ea7d3770a1b2692f2f6b2"
+      url "https://github.com/winebarrel/jhol/releases/download/v1.1.0/jhol_1.1.0_linux_amd64.tar.gz"
+      sha256 "2d7053b30a5068bb89f19c7c1fbee55d5c44faa311d728212bf9ec50adf3ab36"
 
       def install
         bin.install 'jhol'
